@@ -12,16 +12,21 @@ The finish square is a green dot.
 hazards are a red dot.
 
 Two interfaces for maze exploration are offered: the joystick and the
-accelerometer.
+environment sensors. If you opt to use the sensors, tilt the sensehat
+in the direction you'd like to move.
+
+If you step on a hazard, the maze restarts.
+
+If you make it to the finish, the program exits.
 
 ## Running
 
 To run aMAZEing SenseHat, from the command prompt, run
 amazeing_sensehat.py with python3, with the maze file as an argument.
-To use the accelerometer as the control, add a '-a' to the command.
+To use the sensors as the control, add a '-s' to the command.
 Use '-h' to display the command argument help.
 
-    $ python3 amazeing_sensehat.py [-a] [-j] [-h] <maze file>
+    $ python3 amazeing_sensehat.py [-s] [-j] [-h] <maze file>
 
 ## Maze Creation
 
